@@ -7,13 +7,13 @@ interface SpecialtyCardProps {
 }
 
 const SpecialtyCard: React.FC<SpecialtyCardProps> = ({ icon, title, technologies }) => (
-  <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-6 hover:border-purple-500/50 transition-all duration-300 transform hover:scale-105">
-    <div className="flex flex-col items-center text-center space-y-4">
-      <div className="text-4xl text-purple-400">
+  <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-4 sm:p-6 hover:border-purple-500/50 transition-all duration-300 transform hover:scale-105 h-full">
+    <div className="flex flex-col items-center text-center space-y-3 sm:space-y-4 h-full justify-center">
+      <div className="text-3xl sm:text-4xl text-purple-400">
         {icon}
       </div>
-      <h3 className="text-xl font-semibold text-white">{title}</h3>
-      <p className="text-gray-400 text-sm">{technologies}</p>
+      <h3 className="text-lg sm:text-xl font-semibold text-white">{title}</h3>
+      <p className="text-gray-400 text-xs sm:text-sm">{technologies}</p>
     </div>
   </div>
 );
@@ -59,9 +59,9 @@ const Hero: React.FC = () => {
   ];
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 py-20 bg-gradient-to-br from-gray-900 via-purple-900/20 to-blue-900/20">
-      <div className="container mx-auto max-w-7xl">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <section className="min-h-screen flex items-center justify-center px-6 sm:px-8 lg:px-12 py-20 bg-gradient-to-br from-gray-900 via-purple-900/20 to-blue-900/20">
+      <div className="max-w-7xl mx-auto w-full">
+        <div className="grid lg:grid-cols-2 gap-12 xl:gap-16 items-center">
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-4">
@@ -81,18 +81,18 @@ const Hero: React.FC = () => {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-gradient-to-r from-purple-500 to-blue-500 text-white px-8 py-4 rounded-full font-semibold hover:from-purple-600 hover:to-blue-600 transition-all duration-200 transform hover:scale-105">
+            <div className="flex flex-col sm:flex-row gap-4 justify-start">
+              <button className="bg-gradient-to-r from-purple-500 to-blue-500 text-white px-8 py-4 rounded-full font-semibold hover:from-purple-600 hover:to-blue-600 transition-all duration-200 transform hover:scale-105 text-center">
                 Ver projetos
               </button>
-              <button className="border border-gray-600 text-white px-8 py-4 rounded-full font-semibold hover:border-purple-500 hover:text-purple-400 transition-all duration-200">
+              <button className="border border-gray-600 text-white px-8 py-4 rounded-full font-semibold hover:border-purple-500 hover:text-purple-400 transition-all duration-200 text-center">
                 Entrar em contato
               </button>
             </div>
           </div>
 
           {/* Right Content - Specialty Cards */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:gap-6">
             {specialties.map((specialty, index) => (
               <SpecialtyCard
                 key={index}
