@@ -60,6 +60,15 @@ const Contact: React.FC = () => {
             >
               LinkedIn
             </a>
+
+            <a
+              href="https://wa.me/5553999785809?text=Ol%C3%A1%20Murilo%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white/20 hover:bg-white/30 text-white rounded-lg px-6 py-3 font-medium transition-all duration-300 hover:scale-105 backdrop-blur-sm border border-white/20 hover:border-white/40"
+            >
+              WhatsApp
+            </a>
           </div>
         </div>
       </div>

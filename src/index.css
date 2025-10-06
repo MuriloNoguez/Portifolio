@@ -5,6 +5,9 @@
   line-height: 1.5;
   font-weight: 400;
   
+  /* altura do header fixo (h-20 = 5rem) usada para compensar âncoras */
+  --header-height: 5rem;
+
   --background: #0e1014;
   --card-background: rgba(15, 15, 23, 0.8);
   --card-border: rgba(55, 65, 81, 0.2);
@@ -41,6 +44,15 @@ body {
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+}
+
+/* Compensa o header fixo para âncoras */
+html {
+  scroll-padding-top: var(--header-height);
+}
+
+section, header, h1, h2, h3 {
+  scroll-margin-top: calc(var(--header-height) + 0.5rem);
 }
 
 /* Custom scrollbar */

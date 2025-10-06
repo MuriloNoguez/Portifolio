@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="w-full flex flex-col gap-20">
+      <main className="w-full flex flex-col gap-20 pt-20">
         <Hero />
         <About />
         <Experience />
