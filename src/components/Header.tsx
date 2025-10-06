@@ -8,8 +8,8 @@ const Header = () => {
                     <span className="text-white font-medium text-base">Murilo Noguêz</span>
                 </div>
                 
-                {/* Navegação */}
-                <nav className="flex gap-5 md:gap-8">
+                {/* Navegação (visível só em md+) */}
+                <nav className="hidden md:flex gap-5 md:gap-8">
                     <a href="#sobre" className="text-gray-300 hover:text-purple-400 text-sm font-normal transition-colors">Sobre</a>
                     <a href="#habilidades" className="text-gray-300 hover:text-purple-400 text-sm font-normal transition-colors">Habilidades</a>
                     <a href="#projetos" className="text-gray-300 hover:text-purple-400 text-sm font-normal transition-colors">Projetos</a>
