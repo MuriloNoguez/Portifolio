@@ -44,7 +44,7 @@ const specialties = [
 
 const Hero: React.FC = () => {
   return (
-  <section className="min-h-screen flex items-center justify-center px-4 sm:px-8 lg:px-12 bg-[#0e1014] pb-4">
+  <section className="flex items-center justify-center px-4 sm:px-8 lg:px-12 bg-[#0e1014]">
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid lg:grid-cols-2 gap-8 xl:gap-16 items-center">
           {/* Coluna Esquerda */}
