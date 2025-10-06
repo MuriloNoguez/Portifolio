@@ -27,12 +27,12 @@ const Portfolio: React.FC = () => {
       <div className="max-w-7xl mx-auto w-full flex flex-col items-center">
         <div className="flex flex-col items-center gap-4 mb-12 w-full">
           <span className="block text-gray-100 text-sm rounded-full font-medium bg-[#23242a]/80 border border-[#35363c] text-center w-42">Portfólio</span>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white text-center">Projetos em destaque</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-white text-center mb-8">Projetos em destaque</h2>
           <p className="text-lg text-gray-300 text-center max-w-2xl">
             Uma seleção de trabalhos que demonstram minha capacidade técnica e cuidado com a experiência do usuário.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center w-full ">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl">
           {projects.map((project) => (
             <a
               key={project.title}
@@ -40,13 +40,13 @@ const Portfolio: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`Abrir projeto ${project.title} em nova aba`}
-              className="bg-[#181a20] border border-[#35363c] rounded-2xl p-8 flex flex-col gap-4 relative hover:border-purple-500/60 transition-colors items-center w-[25rem] h-[10rem] cursor-pointer no-underline"
+              className="bg-[#181a20] border border-[#35363c] rounded-2xl p-4 flex flex-col gap-2 hover:border-purple-500/60 transition-all duration-300 hover:scale-[1.02] cursor-pointer no-underline w-full min-h-[220px]"
             >
-              <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
-              <p className="text-gray-300 text-sm text-center w-[22rem] h-[4rem]">{project.description}</p>
-              <div className="flex flex-wrap gap-2 ">
+              <h3 className="text-xl font-bold text-white text-center">{project.title}</h3>
+              <p className="text-gray-300 text-sm text-center flex-1 break-words leading-relaxed">{project.description}</p>
+              <div className="flex flex-wrap gap-2 justify-center mt-auto">
                 {project.stack.map((tech) => (
-                  <span key={tech} className="bg-[#23242a] border border-[#35363c] text-gray-200 rounded-sm px-4 text-xs font-medium w-20 h-[rem] text-center">
+                  <span key={tech} className="bg-[#23242a] border border-[#35363c] text-gray-200 rounded-md px-3 py-1 text-xs font-medium">
                     {tech}
                   </span>
                 ))}
