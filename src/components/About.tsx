@@ -2,7 +2,7 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <section className="py-10 flex items-center justify-center px-4 sm:px-8 lg:px-12 bg-[#0e1014]">
+  <section id="sobre" className="py-10 flex items-center justify-center px-4 sm:px-8 lg:px-12 bg-[#0e1014]">
       <div className="max-w-4xl mx-auto w-full">
         <div className="flex flex-col gap-6 items-center text-center">
           <span className="block text-gray-100 text-sm rounded-full font-medium bg-[#23242a]/80 border border-[#35363c] text-center w-42">

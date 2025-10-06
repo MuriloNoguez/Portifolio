@@ -22,7 +22,7 @@ const Header = () => {
                     <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="flex items-center cursor-pointer text-gray-300 hover:text-purple-400 transition-colors" title="Github">
                         <img src="/Github.png" alt="Github" className="h-[20px]" />
                     </a>
-                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="flex items-center cursor-pointer text-gray-300 hover:text-purple-400 transition-colors" title="Linkedin">
+                    <a href="https://www.linkedin.com/in/murilo-da-silva-nogu%C3%AAz-732a022b0/" target="_blank" rel="noopener noreferrer" className="flex items-center cursor-pointer text-gray-300 hover:text-purple-400 transition-colors" title="Linkedin">
                         <img src="/Linkdin.png" alt="Linkedin" className="h-[20px]" />
                     </a>
                     <button className="bg-purple-400 hover:bg-indigo-400 text-white rounded-md h-10 w-32 text-sm font-medium transition-colors shadow-md">Vamos conversar</button>

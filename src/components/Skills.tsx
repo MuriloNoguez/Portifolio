@@ -7,7 +7,7 @@ const skills = [
 
 const Skills: React.FC = () => {
   return (
-    <section className=" flex items-center justify-center px-4 sm:px-8 lg:px-12 bg-[#0e1014] pb-4">
+  <section id="habilidades" className=" flex items-center justify-center px-4 sm:px-8 lg:px-12 bg-[#0e1014] pb-4">
       <div className="max-w-7xl mx-auto w-full">
         <div className="flex flex-col items-center gap-6">
           <span className="block text-gray-100 text-sm rounded-full font-medium bg-[#23242a]/80 border border-[#35363c] text-center w-42">

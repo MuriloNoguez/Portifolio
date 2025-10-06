@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact: React.FC = () => {
   return (
-    <section className="py-20 flex items-center justify-center px-4 sm:px-8 lg:px-12 bg-[#0e1014]">
+  <section id="contato" className="py-20 flex items-center justify-center px-4 sm:px-8 lg:px-12 bg-[#0e1014]">
       <div className="max-w-4xl mx-auto w-full">
         <div className="bg-gradient-to-r from-purple-600/90 via-purple-500/90 to-teal-500/90 rounded-3xl p-8 md:p-12 text-center">
           {/* Ícone */}
