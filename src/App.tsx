@@ -5,6 +5,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -12,10 +13,11 @@ function App() {
       <Header />
       <main className="w-full flex flex-col gap-20">
         <Hero />
-    <About />
-    <Skills />
-    <Portfolio />
-    <Experience />
+        <About />
+        <Experience />
+        <Skills />
+        <Portfolio />
+        <Contact />
       </main>
     </>
   );
