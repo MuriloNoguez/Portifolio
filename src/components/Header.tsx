@@ -1,6 +1,6 @@
 const Header = () => {
     return (
-        <header className="h-20 fixed w-full bg-[#111218] flex items-center justify-center px-2 md:px-4 z-50 shadow-lg">
+        <header className="h-20 fixed w-full bg-transparent backdrop-blur-sm flex items-center justify-center px-2 md:px-4 z-50 shadow-lg">
             <div className="flex items-center justify-between w-full max-w-6xl">
                 {/* Avatar e Nome */}
                 <div className="flex items-center gap-2 md:gap-3">

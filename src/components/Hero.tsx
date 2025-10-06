@@ -44,12 +44,12 @@ const specialties = [
 
 const Hero: React.FC = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 sm:px-8 lg:px-12 py-12 bg-[#0e1014]">
+  <section className="min-h-screen flex items-center justify-center px-4 sm:px-8 lg:px-12 bg-[#0e1014] pb-4">
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid lg:grid-cols-2 gap-8 xl:gap-16 items-center">
           {/* Coluna Esquerda */}
           <div className="flex flex-col gap-6">
-            <span className="inline-block text-gray-100 text-sm px-5 py-2 rounded-full font-medium w-fit">
+            <span className="block text-gray-100 text-sm rounded-full font-medium bg-[#23242a]/80 border border-[#35363c] text-center w-64">
               Desenvolvedor FullStack
             </span>
             <h1 className="text-3xl md:text-4xl font-extrabold text-white leading-tight">
